@@ -1,8 +1,9 @@
 #!/usr/bin/env node
 
-console.log('node bin/brain-games.js');
-console.log('Welcome to the Brain Games!');
+import welcomeUser from '../src/cli.js'
 
-const startGame = require('../src/cli');
+console.log('Welcome to the Brain Games!')
 
-startGame();
+const name = welcomeUser()
+
+console.log(`Hello, ${name}!`)
